@@ -1,73 +1,61 @@
-# React + TypeScript + Vite
+# 📋 Modern To-Do & Task Management Kanban Suite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+[![Live Demo](https://img.shields.io/badge/Demo-modern--todo--react--app.vercel.app-000000.svg?logo=vercel&logoColor=white)](https://modern-todo-react-app.vercel.app)
+[![React](https://img.shields.io/badge/React-19.2-61DAFB.svg?logo=react&logoColor=black)](https://react.dev)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5.0-3178C6.svg?logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
+[![Zustand](https://img.shields.io/badge/State-Zustand%205-brown.svg)](https://github.com/pmndrs/zustand)
+[![DnD Kit](https://img.shields.io/badge/Drag%20%26%20Drop-dnd--kit-blueviolet.svg)](https://dndkit.com)
 
-Currently, two official plugins are available:
+A modern, fluid task management and productivity suite engineered with React 19, Zustand state management, and accessible drag-and-drop sortable Kanban columns.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## 🔗 Live Application
+🌐 **Production URL**: [https://modern-todo-react-app.vercel.app](https://modern-todo-react-app.vercel.app)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 🌟 Key Features
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- **🎯 Drag & Drop Kanban Reordering**: Built with `@dnd-kit/core` and `@dnd-kit/sortable` for responsive item prioritization.
+- **⚡ Reactive Zustand Store**: Lightweight, persistent client-side state with instant optimistic updates.
+- **🏷️ Multi-dimensional Tagging**: Priority levels (Low, Medium, High, Urgent), due date trackers with `date-fns`.
+- **🔍 Filter & Search**: Instant filtering by status (All, Active, Completed), tags, or keyword match.
+- **💾 Local Persistence**: Automatic sync to `localStorage` to prevent data loss.
+- **🌙 Dark / Light UI**: Adaptive themes with clean visual contrast and accessible typography.
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+---
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+## 🛠️ Tech Stack
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+- **Framework**: React 19 + TypeScript
+- **Bundler**: Vite 8 with HMR
+- **State Management**: Zustand v5
+- **Drag & Drop**: `@dnd-kit/core`, `@dnd-kit/sortable`, `@dnd-kit/utilities`
+- **Styling**: Tailwind CSS v4, Lucide Icons, `tailwind-merge`
+
+---
+
+## 🚀 Quick Start
+
+```bash
+# Clone the repository
+git clone https://github.com/Tamanash-009/to-do-app-modern-react.git
+cd to-do-app-modern-react
+
+# Install dependencies
+npm install
+
+# Run Vite dev server
+npm run dev
+
+# Compile production bundle
+npm run build
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+---
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## 👨‍💻 Author
+**Tamanash Chakraborty**
+- GitHub: [@Tamanash-009](https://github.com/Tamanash-009)
+- LinkedIn: [Tamanash Chakraborty](https://linkedin.com/in/tamanashchakraborty)
